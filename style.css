@@ -1,7 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Outfit:wght@200;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+body {
+  background-color: cornsilk;
+}
+.ContentWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.header {
+  height: 15%;
+  width: 100%;
+  background-color: rgb(139, 139, 225);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+.CalculatorBody {
+  width: 500px;
+  height: 550px;
+  background-color: rgb(92, 91, 111);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.CalculatorScreen {
+  padding: 0 1rem 0.1rem 0;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  border-radius: 5px;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(215, 210, 210);
+  font-family: "Teko", sans-serif;
+}
+.CalculatorButtons {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  gap: 1rem;
+}
+.Numbers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem;
+  width: 60%;
+  height: 360px;
+}
+.Operations {
+  width: 40%;
+  height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+.op {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 70px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 0 15px 0 15px;
+  background-color: antiquewhite;
+  font-size: 1rem;
+}
+.big {
+  width: 155px;
 }
